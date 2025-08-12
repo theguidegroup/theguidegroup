@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<link rel="shortcut icon" href="../favicon.ico">
+<style>
+  #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff3399;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
 
+  .dots {
+    display: flex;
+    gap: 15px;
+  }
+
+  .dot {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+  }
+
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+</style>
+</head>
+<body style="background-color: #ff7bbd;">
+
+<div id="loading-screen">
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<iframe src="https://app.formbricks.com/s/cme73ak19d2bhvz01oc7rce7t" width="100%" height="768" style="border-radius: 32px; border:none;"></iframe>
+
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.getElementById('loading-screen').style.display = 'none';
+    }, 2000);
+  });
+</script>
+
+</body>
+</html>
