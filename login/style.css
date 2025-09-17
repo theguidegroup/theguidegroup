@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', "Helvetica Neue", sans-serif;
+    background-color: #f9f9f9;
+    padding: 2em;
+    color: #000000;
+}
+
+h1, h2 {
+    color: #ff3399;
+    margin-bottom: 0.2em;
+}
+
+ul {
+    margin-left: 0.5em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ff3399;
+}
+
+b {
+    color: #ff3399;
+}
+
+a {
+  color: #ff3399;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#ff7bbd;
+}
+
+.logo-image {
+  width: 300px;
+  height: 60px;
+}
+
+.logo-image.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+.copyright {
+    text-align: center;
+    font-size: 11px;
+    color: #ff3399;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+  max-width: 1024px;
+  margin: 1rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #fff0f6;
+  border: 1px solid #ffa5bd;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(255, 165, 189, 0.3);
+  font-family: 'Poppins', "MS Gothic", sans-serif;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #ff3399;
+  font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ffa5bd;
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  min-height: 3.5rem;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #ff7bbd;
+  box-shadow: 0 0 8px #ff7bbdaa;
+  outline: none;
+}
+
+form input[type="submit"] {
+  background-color: #ff3399;
+  color: #fff;
+  border: none;
+  padding: 1.15rem 2.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 1.5rem auto 0;
+  min-width: 360px;
+  box-shadow: 0 6px 16px rgba(255, 51, 153, 0.4);
+}
+
+form input[type="submit"]:hover {
+  background-color: #ff7bbd;
+  box-shadow: 0 8px 20px rgba(255, 123, 189, 0.6);
+}
+
+.required-star {
+  color: #cc3366;
+  margin-left: 4px;
+  font-weight: 700;
+}
+
+.error-message {
+  color: #cc3366;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
