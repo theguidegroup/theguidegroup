@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Member Login - The Guide Group</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="style.css" />
-  <script async data-id="101492934" src="//static.getclicky.com/js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion membre - The Guide Group</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script async data-id="101494630" src="//static.getclicky.com/js"></script>
 </head>
 <body>
 <p></p>
   <div style="text-align: center;">
-      <img src="the-guide-group_en.png" class="logo-image the-guide-group" draggable="false">
+      <img src="the-guide-group_en.png" class="logo-image the-guide-group" draggable="false"><br>
       <img src="france-private-guide_logo.png" class="logo-image france-private-guide" draggable="false">
     </div>
   </div>
 
-  <h1 style="text-align: center; font-size: 42pt;">Member Login</h1>
+  <h1 style="text-align: center; font-size: 42pt;">Connexion membre</h1>
   <hr>
   <div style="max-width: 1024px; margin: 2pt auto; line-height: 2; font-size: 12pt; text-align: center; padding: 0 2pt;">
-    <font style="color: #ff3399;">Please enter your group member email address and password.</font><br>
+    <font style="color: #ff3399;">
+      Veuillez saisir votre adresse e-mail de membre du groupe ainsi que votre mot de passe.
+    </font><br>
   </div>
 
   <form id="loginForm" action="https://franceprivateguide.com/login/verification" method="POST" class="form" novalidate>
 
-    <label for="email">Email<span class="required-star">*</span></label>
-    <input type="email" id="email" name="email" placeholder="example@example.com" required />
-    <div id="emailError" class="error-message" style="display:none;">Please enter a valid email address.</div>
+    <label for="email">E-mail<span class="required-star">*</span></label>
+    <input type="email" id="email" name="email" placeholder="exemple@theguidegroup.org" required />
+    <div id="emailError" class="error-message" style="display:none;">
+      Veuillez saisir une adresse e-mail valide.
+    </div>
 
-    <label for="password">Password<span class="required-star">*</span></label>
-    <input type="password" id="password" name="password" placeholder="Please enter your password." required />
-    <div id="passwordError" class="error-message" style="display:none;">Please enter your password.</div>
+    <label for="password">Mot de passe<span class="required-star">*</span></label>
+    <input type="password" id="password" name="password" placeholder="Veuillez saisir votre mot de passe." required />
+    <div id="passwordError" class="error-message" style="display:none;">
+      Veuillez saisir votre mot de passe.
+    </div>
 
-    <input type="submit" value="Login" />
+    <input type="submit" value="Se connecter" />
   </form>
 
   <script>
