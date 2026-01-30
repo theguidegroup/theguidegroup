@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À propos de TGG</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <script async data-id="101494630" src="//static.getclicky.com/js"></script>
+  <style>
+    :root {
+      --accent: #ff3399;
+      --dark: #222222;
+      --gray: #666666;
+      --light-gray: #f6f6f6;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      color: var(--dark);
+      background-color: var(--white);
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 20px;
+    }
+
+    h2 span {
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--gray);
+      margin-bottom: 18px;
+      max-width: 900px;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      height: 70vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://images.pexels.com/photos/12541596/pexels-photo-12541596.jpeg?auto=compress&cs=tinysrgb&w=800")
+        center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+      color: var(--white);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 800px;
+    }
+
+    .hero p {
+      color: #eaeaea;
+      font-size: 1.15rem;
+      margin-top: 20px;
+    }
+
+    /* ---------- BLOCK ---------- */
+    .block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 60px;
+      align-items: center;
+    }
+
+    .block img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    /* ---------- PRESENCE ---------- */
+    .presence {
+      background-color: var(--light-gray);
+    }
+
+    .countries {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .country {
+      padding: 25px;
+      background: var(--white);
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .country span {
+      display: block;
+      margin-top: 8px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ---------- VALUES ---------- */
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .value {
+      border-left: 4px solid var(--accent);
+      padding-left: 20px;
+    }
+
+    .value h3 {
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+.team {
+  text-align: center;
+  padding: 50px 8%;
+}
+
+.team h2 {
+  font-size: 16pt;
+  margin-bottom: 15px;
+}
+
+.team p {
+  color: #666;
+  font-size: 9pt;
+  margin-bottom: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  margin-top: 35px;
+}
+
+.team-member img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff3399;
+}
+
+    /* ---------- TEAM ---------- */
+    .team {
+      background-color: var(--light-gray);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 45px 8%;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>THE GUIDE GROUP<br>Un pont entre l’Europe et ses voyageurs</h1>
+      <p>
+        Une organisation internationale dédiée à la coordination,
+        à la confiance et à l’expertise touristique.
+      </p>
+    </div>
+  </div>
+
+  <!-- QUI SOMMES-NOUS -->
+  <section>
+    <div class="block">
+      <div>
+        <h2>Qui sommes-<span>nous</span></h2>
+        <p>
+          THE GUIDE GROUP (TGG) est une organisation spécialisée dans la mise en relation
+          entre voyageurs, guides professionnels et agences locales à travers l’Europe.
+        </p>
+        <p>
+          Nous opérons dans plusieurs pays européens et accompagnons aussi bien
+          des voyageurs individuels que des partenaires professionnels,
+          en assurant des opérations fluides et structurées.
+          Parallèlement, nous développons actuellement nos activités en Asie, notamment au Japon, en Corée, en Malaisie et en Thaïlande.
+        </p>
+        <p>
+          Notre mission est simple : créer des expériences fiables,
+          humaines et bien organisées, sans compromis sur la qualité.
+        </p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="TGG Team">
+    </div>
+  </section>
+
+  <!-- PRESENCE -->
+  <section class="presence">
+    <h2>Une présence <span>européenne</span></h2>
+    <p>
+      Grâce à une structure flexible et à un réseau solide de partenaires,
+      TGG est activement présent dans de nombreuses destinations européennes.
+    </p>
+
+    <div class="countries">
+      <div class="country">France <span>Paris</span></div>
+      <div class="country">Espagne <span>Barcelone</span></div>
+      <div class="country">Suisse <span>Zurich</span></div>
+      <div class="country">Pays-Bas <span>Amsterdam</span></div>
+      <div class="country">Allemagne <span>Munich</span></div>
+    </div>
+  </section>
+
+  <!-- ROLE -->
+  <section>
+    <h2>Un rôle de <span>liaison</span></h2>
+    <p>
+      TGG agit comme un intermédiaire de confiance entre les voyageurs internationaux
+      et les acteurs locaux du tourisme européen.
+    </p>
+    <p>
+      Nous aidons les agences locales à accéder à une clientèle plus large,
+      tout en permettant aux voyageurs de bénéficier de services clairs,
+      transparents et sécurisés.
+    </p>
+
+    <div class="values">
+      <div class="value">
+        <h3>Coordination</h3>
+        <p>Une gestion centralisée pour des opérations locales efficaces.</p>
+      </div>
+      <div class="value">
+        <h3>Transparence</h3>
+        <p>Des informations claires, sans frais cachés ni surprises.</p>
+      </div>
+      <div class="value">
+        <h3>Fiabilité</h3>
+        <p>Des partenaires sélectionnés avec exigence et professionnalisme.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team">
+    <h2>Notre <span>équipe</span></h2>
+    <p>
+      L’équipe TGG est composée de professionnels basés dans différents pays européens,
+      issus des domaines du tourisme, de la gestion et du marketing international.
+    </p>
+    <p>
+      Cette diversité culturelle et géographique nous permet de comprendre
+      les attentes des voyageurs et les réalités locales,
+      tout en maintenant une vision globale et cohérente.
+    </p>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=10" alt="Alice Dupont">
+      <h4>Alice Dupont</h4>
+      <p>Responsable Marketing Touristique (France)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=5" alt="Luca Rossi">
+      <h4>Luca Rossi</h4>
+      <p>Chef de Projet Voyages (Italie)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=16" alt="Sofia Müller">
+      <h4>Sofia Müller</h4>
+      <p>Coordinateur des Guides (Allemagne)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=8" alt="Johan Svensson">
+      <h4>Johan Svensson</h4>
+      <p>Chargé des Relations Clientèle (Suède)</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=35" alt="Emma Dubois">
+      <h4>Emma Dubois</h4>
+      <p>Responsable Communication (Belgique)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=11" alt="Karl Schmidt">
+      <h4>Karl Schmidt</h4>
+      <p>Consultant Touristique (Autriche)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=41" alt="Clara Jensen">
+      <h4>Clara Jensen</h4>
+      <p>Responsable Partenariats (Danemark)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=18" alt="Pedro Almeida">
+      <h4>Pedro Almeida</h4>
+      <p>Chef de Projet Voyages (Portugal)</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=26" alt="Anna Novak">
+      <h4>Anna Novak</h4>
+      <p>Chargée de Marketing Digital (Pologne)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=33" alt="David Brown">
+      <h4>David Brown</h4>
+      <p>Coordinateur des Agences (Royaume-Uni)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=9" alt="Elena Petrova">
+      <h4>Elena Petrova</h4>
+      <p>Responsable Relations Guides (France)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=51" alt="Mikkel Hansen">
+      <h4>Mikkel Hansen</h4>
+      <p>Chargé de Développement Commercial (Norvège)</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=7" alt="Isabella Costa">
+      <h4>Isabella Costa</h4>
+      <p>Gestionnaire des Voyages (Espagne)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=14" alt="Thomas Fischer">
+      <h4>Thomas Fischer</h4>
+      <p>Consultant Marketing (Allemagne)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=1" alt="Maria Silva">
+      <h4>Maria Silva</h4>
+      <p>Responsable Partenariats (Portugal)</p>
+    </div>
+    <div class="team-member">
+      <img src="https://i.pravatar.cc/150?img=13" alt="Lars Nielsen">
+      <h4>Lars Nielsen</h4>
+      <p>Coordinateur des Guides (Danemark)</p>
+    </div>
+    <div class="team-member">
+     <img src="https://i.pravatar.cc/150?img=43" alt="Sophie Laurent">
+     <h4>Sophie Laurent</h4>
+     <p>Chargée de Marketing Touristique (France)</p>
+    </div>
+    <div class="team-member">
+     <img src="https://i.pravatar.cc/150?img=20" alt="Erik Johansen">
+     <h4>Erik Johansen</h4>
+      <p>Consultant Voyages & Partenariats (Norvège)</p>
+    </div>
+
+  </div>
+  </section>
+
+  <footer>
+    <font style="font-size:30pt;"><b>TGG France</b></font><br>
+    25 Rue de Tolbiac, 75013 Paris<br>
+    Tél: 08 05 98 05 96 / 08 05 98 05 75<br>
+    <a href="mailto:booking@franceprivateguide.com">booking@franceprivateguide.com</a><br><br>
+    © 2026 THE GUIDE GROUP All rights reserved.
+  </footer>
+
+  <script>
+    console.log("Page À propos TGG chargée");
+  </script>
+
+</body>
+</html>

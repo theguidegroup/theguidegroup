@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TGG – THE GUIDE GROUP</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <script async data-id="101494630" src="//static.getclicky.com/js"></script>
+  <style>
+    :root {
+      --accent: #ff3399;
+      --dark: #222222;
+      --gray: #666666;
+      --light-gray: #f6f6f6;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      color: var(--dark);
+      line-height: 1.6;
+      background-color: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(
+          rgba(0,0,0,0.35),
+          rgba(0,0,0,0.35)
+        ),
+        url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      color: var(--white);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 35px;
+      color: #f0f0f0;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .section-title span {
+      color: var(--accent);
+    }
+
+    .section-subtitle {
+      color: var(--gray);
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    /* ---------- WHY TGG ---------- */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+
+    .feature {
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .feature h3::before {
+      content: "■ ";
+      color: var(--accent);
+    }
+
+    .feature p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about {
+      background-color: var(--light-gray);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 14px;
+    }
+
+    .about p {
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 25px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+      color: var(--white);
+    }
+
+    /* ---------- CIRCUITS ---------- */
+    .circuits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      background-color: var(--white);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .price {
+      color: var(--accent);
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #111;
+      color: #bbb;
+      padding: 50px 8%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1 style="font-size: 60pt;">TGG</h1>
+      <h1>Relier les voyageurs,<br>les guides et l’Europe et l’Asie</h1>
+      <p>
+        Circuits guidés, équipes locales et expériences organisées avec soin
+        à travers plusieurs pays européens.
+      </p>
+      <a href="circuits" class="btn-primary">Découvrir nos circuits</a>
+    </div>
+  </div>
+
+  <!-- WHY TGG -->
+  <section>
+    <h2 class="section-title">Pourquoi <span>TGG</span></h2>
+    <p class="section-subtitle">
+      THE GUIDE GROUP est bien plus qu’un simple organisateur de voyages.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Présence européenne</h3>
+        <p>Des équipes et partenaires locaux dans plusieurs pays d’Europe.</p>
+      </div>
+      <div class="feature">
+        <h3>Réseau de confiance</h3>
+        <p>Guides certifiés et agences sélectionnées avec rigueur.</p>
+      </div>
+      <div class="feature">
+        <h3>Organisation claire</h3>
+        <p>Processus simples, transparents et sécurisés.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="TGG Team">
+
+    <div>
+      <h2 class="section-title">À propos de <span>TGG</span></h2>
+      <p>
+        THE GUIDE GROUP agit comme un pont entre les voyageurs,
+        les guides professionnels et les agences locales à travers l’Europe.
+      </p>
+      <p>
+        Grâce à notre expertise en gestion et en marketing touristique,
+        nous aidons nos partenaires à se connecter à une clientèle internationale,
+        tout en garantissant une expérience fiable et humaine aux voyageurs.
+      </p>
+      <a href="about" class="btn-primary">À propos de nous</a>
+    </div>
+  </section>
+
+  <!-- CIRCUITS -->
+  <section>
+    <h2 class="section-title">Circuits <span>sélectionnés</span></h2>
+
+    <div class="circuits">
+
+      <div class="card" data-country="germany">
+        <img src="https://images.pexels.com/photos/16484906/pexels-photo-16484906.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <div class="card-content">
+          <h3>Berlin & Highlights</h3>
+          <div class="meta">1 jour · Culture & histoire</div>
+          <div class="price">À partir de 499 €</div>
+          <a href="#" class="btn">Réserver avec un code de parrainage</a>
+        </div>
+      </div>
+
+      <div class="card" data-country="france">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+        <div class="card-content">
+          <h3>Paris Essentiel</h3>
+          <div class="meta">2 jours · Guide francophone</div>
+          <div class="price">À partir de 649 €</div>
+          <a href="#" class="btn">Réserver avec un code de parrainage</a>
+        </div>
+      </div>
+
+      <div class="card" data-country="spain">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+          <h3>Barcelone Authentique</h3>
+          <div class="meta">1 jour · Architecture & gastronomie</div>
+          <div class="price">À partir de 369 €</div>
+          <a href="#" class="btn">Réserver avec un code de parrainage</a>
+        </div>
+      </div>
+
+  <div class="card" data-country="switzerland">
+    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Swiss Alps">
+    <div class="card-content">
+      <h3>Alpes Suisses</h3>
+      <div class="meta">3 jours · Nature & panoramas</div>
+      <div class="price">À partir de 599 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="uk">
+    <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800" alt="London">
+    <div class="card-content">
+      <h3>London Highlights</h3>
+      <div class="meta">2 jours · Culture & histoire</div>
+      <div class="price">À partir de 550 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="netherlands">
+    <img src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amsterdam">
+    <div class="card-content">
+      <h3>Amsterdam & Canaux</h3>
+      <div class="meta">1 jour · Balades et musées</div>
+      <div class="price">À partir de 310 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="austria">
+    <img src="https://images.pexels.com/photos/1619561/pexels-photo-1619561.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vienna">
+    <div class="card-content">
+      <h3>Vienne Classique</h3>
+      <div class="meta">2 jours · Musique & Histoire</div>
+      <div class="price">À partir de 420 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="portugal">
+    <img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lisbon">
+    <div class="card-content">
+      <h3>Lisbonne Authentique</h3>
+      <div class="meta">2 jours · Culture & gastronomie</div>
+      <div class="price">À partir de 340 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="belgium">
+    <img src="https://images.pexels.com/photos/35088458/pexels-photo-35088458.jpeg?auto=compress&cs=tinysrgb&w=800
+" alt="Brussels">
+    <div class="card-content">
+      <h3>Bruxelles & Délices</h3>
+      <div class="meta">1 jour · Chocolat & Culture</div>
+      <div class="price">À partir de 280 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="denmark">
+    <img src="https://images.pexels.com/photos/1619567/pexels-photo-1619567.jpeg?auto=compress&cs=tinysrgb&w=800
+" alt="Copenhagen">
+    <div class="card-content">
+      <h3>Copenhague Découverte</h3>
+      <div class="meta">1 jour · Balades & culture</div>
+      <div class="price">À partir de 300 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="sweden">
+    <img src="https://images.pexels.com/photos/33252391/pexels-photo-33252391.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stockholm">
+    <div class="card-content">
+      <h3>Stockholm & Archipel</h3>
+      <div class="meta">2 jours · Culture & Nature</div>
+      <div class="price">À partir de 460 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="norway">
+    <img src="https://images.pexels.com/photos/1574843/pexels-photo-1574843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Norway fjords">
+    <div class="card-content">
+      <h3>Fjords de Norvège</h3>
+      <div class="meta">3 jours · Nature & paysages</div>
+      <div class="price">À partir de 580 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <font style="font-size:30pt;"><b>TGG France</b></font><br>
+    25 Rue de Tolbiac, 75013 Paris<br>
+    Tél: 08 05 98 05 96 / 08 05 98 05 75<br>
+    <a href="mailto:booking@franceprivateguide.com">booking@franceprivateguide.com</a><br><br>
+    © 2026 THE GUIDE GROUP All rights reserved.
+  </footer>
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/689f32c5fcd547192dde60de/1j2mtslos';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+  <script>
+    // Placeholder for future interactions
+    console.log("TGG Accueil chargé");
+  </script>
+
+</body>
+</html>

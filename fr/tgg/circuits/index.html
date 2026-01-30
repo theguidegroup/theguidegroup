@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circuits – THE GUIDE GROUP</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <script async data-id="101494630" src="//static.getclicky.com/js"></script>
+  <style>
+    :root {
+      --accent: #ff3399;
+      --dark: #222222;
+      --gray: #ff3399;
+      --light-gray: #f6f6f6;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--gray);
+      max-width: 900px;
+      margin-bottom: 25px;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      height: 60vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://images.unsplash.com/photo-1505761671935-60b3a7427bad")
+        center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 8%;
+      color: var(--white);
+    }
+
+    /* ---------- FILTER ---------- */
+    .filters {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .filter-btn {
+      padding: 10px 22px;
+      border-radius: 25px;
+      border: 1px solid #ddd;
+      background: var(--white);
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background-color: var(--accent);
+      color: var(--white);
+      border-color: var(--accent);
+    }
+
+    /* ---------- CARDS ---------- */
+    .circuits {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .card .meta {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 25px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+      color: var(--white);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 45px 8%;
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Nos <span>circuits</span></h1>
+      <p>
+        Découvrez une sélection de circuits organisés avec soin,
+        accompagnés par des guides locaux et des partenaires de confiance.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section>
+    <p>
+      Nos circuits sont conçus pour offrir un équilibre entre découverte,
+      confort et authenticité. Chaque expérience est coordonnée par
+      THE GUIDE GROUP en collaboration avec des équipes locales.
+    </p>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="germany">Allemagne</button>
+        <button class="filter-btn" data-filter="france">France</button>
+        <button class="filter-btn" data-filter="spain">Espagne</button>
+        <button class="filter-btn" data-filter="switzerland">Suisse</button>
+        <button class="filter-btn" data-filter="uk">Royaume-Uni</button>
+        <button class="filter-btn" data-filter="netherlands">Pays-Bas</button>
+        <button class="filter-btn" data-filter="austria">Autriche</button>
+        <button class="filter-btn" data-filter="portugal">Portugal</button>
+        <button class="filter-btn" data-filter="belgium">Belgique</button>
+        <button class="filter-btn" data-filter="denmark">Danemark</button>
+        <button class="filter-btn" data-filter="sweden">Suède</button>
+        <button class="filter-btn" data-filter="norway">Norvège</button>
+    </div>
+
+    <!-- CIRCUITS -->
+    <div class="circuits">
+
+      <div class="card" data-country="germany">
+        <img src="https://images.pexels.com/photos/16484906/pexels-photo-16484906.jpeg?auto=compress&cs=tinysrgb&w=800">
+        <div class="card-content">
+          <h3>Berlin & Highlights</h3>
+          <div class="meta">1 jour · Culture & histoire</div>
+          <div class="price">À partir de 499 €</div>
+          <a href="#" class="btn">Réserver avec un code de parrainage</a>
+        </div>
+      </div>
+
+      <div class="card" data-country="france">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade">
+        <div class="card-content">
+          <h3>Paris Essentiel</h3>
+          <div class="meta">2 jours · Guide francophone</div>
+          <div class="price">À partir de 649 €</div>
+          <a href="#" class="btn">Réserver avec un code de parrainage</a>
+        </div>
+      </div>
+
+      <div class="card" data-country="spain">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+          <h3>Barcelone Authentique</h3>
+          <div class="meta">1 jour · Architecture & gastronomie</div>
+          <div class="price">À partir de 369 €</div>
+          <a href="#" class="btn">Réserver avec un code de parrainage</a>
+        </div>
+      </div>
+
+  <div class="card" data-country="switzerland">
+    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Swiss Alps">
+    <div class="card-content">
+      <h3>Alpes Suisses</h3>
+      <div class="meta">3 jours · Nature & panoramas</div>
+      <div class="price">À partir de 599 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="uk">
+    <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=800" alt="London">
+    <div class="card-content">
+      <h3>London Highlights</h3>
+      <div class="meta">2 jours · Culture & histoire</div>
+      <div class="price">À partir de 550 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="netherlands">
+    <img src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amsterdam">
+    <div class="card-content">
+      <h3>Amsterdam & Canaux</h3>
+      <div class="meta">1 jour · Balades et musées</div>
+      <div class="price">À partir de 310 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="austria">
+    <img src="https://images.pexels.com/photos/1619561/pexels-photo-1619561.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vienna">
+    <div class="card-content">
+      <h3>Vienne Classique</h3>
+      <div class="meta">2 jours · Musique & Histoire</div>
+      <div class="price">À partir de 420 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="portugal">
+    <img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lisbon">
+    <div class="card-content">
+      <h3>Lisbonne Authentique</h3>
+      <div class="meta">2 jours · Culture & gastronomie</div>
+      <div class="price">À partir de 340 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="belgium">
+    <img src="https://images.pexels.com/photos/35088458/pexels-photo-35088458.jpeg?auto=compress&cs=tinysrgb&w=800
+" alt="Brussels">
+    <div class="card-content">
+      <h3>Bruxelles & Délices</h3>
+      <div class="meta">1 jour · Chocolat & Culture</div>
+      <div class="price">À partir de 280 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="denmark">
+    <img src="https://images.pexels.com/photos/1619567/pexels-photo-1619567.jpeg?auto=compress&cs=tinysrgb&w=800
+" alt="Copenhagen">
+    <div class="card-content">
+      <h3>Copenhague Découverte</h3>
+      <div class="meta">1 jour · Balades & culture</div>
+      <div class="price">À partir de 300 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="sweden">
+    <img src="https://images.pexels.com/photos/33252391/pexels-photo-33252391.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Stockholm">
+    <div class="card-content">
+      <h3>Stockholm & Archipel</h3>
+      <div class="meta">2 jours · Culture & Nature</div>
+      <div class="price">À partir de 460 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+  <div class="card" data-country="norway">
+    <img src="https://images.pexels.com/photos/1574843/pexels-photo-1574843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Norway fjords">
+    <div class="card-content">
+      <h3>Fjords de Norvège</h3>
+      <div class="meta">3 jours · Nature & paysages</div>
+      <div class="price">À partir de 580 €</div>
+      <a href="#" class="btn">Réserver avec un code de parrainage</a>
+    </div>
+  </div>
+
+</div>
+
+    </div>
+  </section>
+
+  <footer>
+    <font style="font-size:30pt;"><b>TGG France</b></font><br>
+    25 Rue de Tolbiac, 75013 Paris<br>
+    Tél: 08 05 98 05 96 / 08 05 98 05 75<br>
+    <a href="mailto:booking@franceprivateguide.com">booking@franceprivateguide.com</a><br><br>
+    © 2026 THE GUIDE GROUP All rights reserved.
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.country === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
